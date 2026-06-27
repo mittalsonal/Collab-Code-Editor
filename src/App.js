@@ -7,6 +7,7 @@ import NotFound from './pages/NotFound';
 import {Toaster} from "react-hot-toast";
 import LandingPage from './pages/LandingPage';
 import ErrorBoundary from './components/ErrorBoundary';
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
             <Route path='*' element={<NotFound/>}></Route>
           </Routes>
         </ErrorBoundary>
+        <ScrollToTopButton />
       </BrowserRouter>
     </ErrorBoundary>
   );
